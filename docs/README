@@ -1,0 +1,14 @@
+We did not do any extra credit.
+
+test_suite:
+
+test01.c-- write, write expression, writeln
+test02.c-- if else
+test03.c-- while loop, assignment, break
+test04.c-- invalid l-value error
+test05.c-- read
+test06.c-- functions
+test07.c-- arrays, indexing
+
+
+

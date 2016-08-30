@@ -1,0 +1,317 @@
+Program
+Decl
+Type
+MATCH: INT
+MATCH: ID.a # variable definition
+Program'
+VarDeclList'
+VarDecl'
+MATCH: SEMICOLON
+Decl
+Type
+MATCH: INT
+MATCH: ID.b # variable definition
+Program'
+VarDeclList'
+VarDecl'
+MATCH: LBRACKET
+MATCH: NUM.2 # array size
+MATCH: RBRACKET
+MATCH: SEMICOLON
+Decl
+Type
+MATCH: INT
+MATCH: ID.main # function definition
+Program'
+FunDeclList'
+FunDeclTail
+MATCH: LPAREN
+ParamDeclList # list of params
+MATCH: RPAREN
+Block
+MATCH: LCURLY
+VarDeclList
+StmtList
+Stmt
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: ID.b
+H'
+MATCH: LBRACKET
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: NUM.0 # array indexing
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: RBRACKET
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: ASSIGN
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: NUM.1 # array indexing
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: SEMICOLON
+StmtList'
+StmtList
+Stmt
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: ID.b
+H'
+MATCH: LBRACKET
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: NUM.1 # array indexing
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: RBRACKET
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: ASSIGN # = operation
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: NUM.2 # array indexing
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: SEMICOLON
+StmtList'
+StmtList
+Stmt
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: ID.a
+H'
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: ASSIGN # = operation
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: ID.b
+H'
+MATCH: LBRACKET
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: NUM.0
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: RBRACKET
+F'
+E'
+MATCH: PLUS # + operation
+F
+G
+H
+MATCH: ID.b
+H'
+MATCH: LBRACKET
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: NUM.1
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: RBRACKET
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: SEMICOLON
+StmtList'
+StmtList
+Stmt
+MATCH: IF
+MATCH: LPAREN
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: ID.a
+H'
+F'
+E'
+D'
+MATCH: GTR # > operation
+E
+F
+G
+H
+MATCH: NUM.1
+F'
+E'
+C'
+B'
+A'
+Expr'
+MATCH: RPAREN
+Stmt
+MATCH: WRITE # write command
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: ID.a # id
+H'
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: SEMICOLON
+MATCH: ELSE
+Stmt
+MATCH: WRITELN # writeln command
+MATCH: SEMICOLON
+StmtList'
+StmtList
+Stmt
+MATCH: RETURN # return statement
+Expr
+A
+B
+C
+D
+E
+F
+G
+H
+MATCH: NUM.1 # num
+F'
+E'
+D'
+C'
+B'
+A'
+Expr'
+MATCH: SEMICOLON
+StmtList'
+MATCH: RCURLY
+FunDeclList
+MATCH: DONE

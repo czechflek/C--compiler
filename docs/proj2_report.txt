@@ -1,0 +1,21 @@
+Implemented phrase error recovery:
+
+) in FunDeclTail -> ( ParamDeclList ) Block
+] in VarDecl' -> [ num ] ;
+; in VarDecl' -> [ num ] ;
+] in ParamDecl' -> [ ]
+} in Block -> { VarDeclList StmtList }
+; in Stmt -> Expr ;
+; in Stmt -> return ;
+; in Stmt -> read id ;
+; in Stmt -> write Expr ;
+; in Stmt -> writeln ;
+; in Stmt -> break ;
+( in Stmt -> if ( Expr ) Stmt else Stmt ;
+) in Stmt -> if ( Expr ) Stmt else Stmt ;
+( in Stmt -> while ( Expr ) Stmt
+) in Stmt -> while ( Expr ) Stmt
+else in Stmt -> if ( Expr ) Stmt else Stmt ;
+) in H -> ( ExprList )
+) in H' -> ( ExprList )
+] in H' -> [ ExprList ]

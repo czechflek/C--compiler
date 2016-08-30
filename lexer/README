@@ -1,0 +1,14 @@
+* first, run: make depend 
+  ignore the warnings about not being able to find stddef.h etc.
+
+* to compile: make 
+
+* to run the lexer:
+        ./lexer source_code_file
+  example:
+        ./lexer ../test_suite/test_arrays.c-- 
+
+* if you add more .h files, put them in the includes subdirectory
+* if you add more .c files, add them to the SRCS def in the Makefile 
+* add more comments to this starting point code
+* read the "Notes on C Coding Style" (link on Nexus page)

@@ -1,0 +1,20 @@
+run 'make depend' once
+then 'make' to build
+
+builds two sample programs
+
+  test_prog:  draws AST to stdout
+        to run:
+        ./test_prog
+
+  test_nltk:  creates a python output file that can be used by the nltk
+              tree drawing library
+
+        to run:
+        ./test_nltk outputfile
+
+        then:
+        python -i outputfile
+        >>>  ast.draw()
+
+        note: it will take a long time for python to draw very large ASTs
